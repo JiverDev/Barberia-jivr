@@ -1,0 +1,404 @@
+body{
+    font-family: 'EB Garamond', serif;
+}
+
+/*Selectores avanzados
+main < p{ xxxxxx }  (elemento < hijo) --> llama solo al hijo, solo al parrafo que le sigue, no a los demas que se consideran como nietos, o visnietos 
+img + p{ xxxxxx }   se le aplica a el siguiente p que viene despues de img 
+img ~ p{ xxxxxx } a todos menos al p que viene despues de img
+.principal p:not(#lema) se los aplica a totods, menos a la mision
+*/
+
+header{
+    background-color: #587a7c9e;
+    padding: 20px 0;
+    /*color: rgba(red, green, blue, opacidad); color: rgba(red, green, blue, 3) */
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    /* 0 arriba y abajo, y para izq y der (lateral) se encuentra auto: que da la percepcion de estar centralizado*/
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+nav li{
+    display: inline;
+    /* margin: #arriba, #abajo, #Derecha, #izquierda*/
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Captura del mause: cambia de color y subraya los enlaces de la barra de navegacion*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* CSS para productos*/
+
+.principalservice .otrosservicios, .text_os, .text_sp{
+    margin: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principalservice p, .otrosservicios p{ 
+    
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+
+
+.productos, .listaotrosservicios{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li, .listaotrosservicios li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* se puede utilizar= border: width style color, en lugar de:  
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;  */
+    border: 2px solid #000000;
+    /* Border-radius: # sup izq(top left), # sup der(top right), # infe izq(bottom left), # infe derbottom right*/
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+    
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2, .listaotrosservicios h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+/*  img + p{ xxxxxx }   se le aplica a el siguiente p que viene despues de img 
+h2 + img{
+    width:  250px;
+    height: 300px;
+}
+    /*  se puede usar la funcion cal()
+    width: calc(300px - 50px)   */
+
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.textoatractivo{
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+footer{
+    text-align: center;
+    background: url(img/imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.lastpart{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* CSS para contacto*/
+
+
+.formulariodecontacto{
+    width: 700px;
+    margin: 40px  0;
+    margin-left: 10%; 
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    /* margin: #arriba #derecha #abajo */
+    margin: 0 0 10px
+}
+
+.input-padron{
+    display: block;
+    /* margin: #arriba #derecha #abajo */
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/* id/.class/#/:hover --> Captura del mause, y realizá lo que se le indica en el CSS*/
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+/*MIOOOOO*/
+.imgfinal{
+    position: absolute;
+    top: 400px;
+    right: 230px;
+    width:  250px;
+    height: 300px;
+}
+
+/*MIOOOOO*/
+.atentiontime{
+    position: absolute;
+    top: 740px;
+    right: 230px;
+    font-size: 30px;
+    font-weight:lighter;
+}
+
+table{
+    margin: 40px 40px;
+    /*NEW for me*/
+    position: absolute;
+    top: 750px;
+    right: 200px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS para nuestro Home*/
+
+/*MIIOOOOO*/
+.cajabannner{
+    text-align: center;
+}
+
+.banner{
+    border: 5px solid #906208;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 2%;
+    width:  250px;
+    height: 300px;
+}
+
+.principal{
+    margin: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+
+.tituloprincipal{
+    text-align: center;
+    /* 2em : 2 veces el tamaño (fuente o tamaño padron) por defecto del navegador (chrome=15px)*/
+    font-size: 2em;
+    margin: 2em 0 1em 0;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.imgbarbero{
+    float: right;
+    /*Sentido horario: Arriba, Derecha, Abajo, Izquierda*/
+    margin: 0 0 20px 40px ;
+    height: 100%;
+    width:  210px;
+    height: 250px;
+}
+
+
+/*MIOOOOO*/
+#pabajo{
+    clear: right;
+    text-align: center;
+}
+
+/*MIOOOOO*/
+.barberiaparatodos{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #cccccc);
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+.diferenciales{
+    padding: 3em 0;
+    background: linear-gradient(#cccccc, #aaaaaa);
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+    
+}
+.listadiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: oblique;
+    
+}
+
+.items::before{
+    content: "☆ ";
+
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+/*con sombra en el elemento (imagen)*/
+.imagenBarberia{
+    width: 60%;
+    height: 70%;
+    box-shadow: 10px 10px 30px 15px #000000; 
+/* box-shadow: #Lderecha #Labajo #difumicidad(degradado) #expansion rgb()color, con "la coma (,)" se puede volver a sombrear el mismo elemento de otra forma
+    (para hacerle al lado contrario se coloca "-#px"      */
+}
+
+.imagenBarberia:hover{
+    opacity: 0.5;
+    transition: 400ms;
+   
+}
+
+.contenidovideo{
+    padding: 3em 0;
+    background: linear-gradient(#aaaaaa, #888888);
+
+}
+
+.video{
+    /*la misma anchura que nos da por defecto en Youtube -> HTML*/
+    width: 560px;
+    /*para centrar el video*/
+    margin: 1em auto;   
+}
+
+.mapa{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mapacontenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*
+@media screen and (max-width:480px){
+    test
+}
+*/
